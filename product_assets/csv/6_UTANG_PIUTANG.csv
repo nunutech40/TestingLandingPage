@@ -1,0 +1,10 @@
+TABEL A: UTANG KITA (Kewajiban)
+Kepada Siapa,Jenis Utang,Jumlah Utang (Rp),Cicilan per Bulan (Rp),Sisa Tenor,Jatuh Tempo,Agunan/Jaminan,Asuransi Kredit,Keterangan
+Bank BCA,KPR Rumah,500000000,5000000,120 bulan,2034-12-31,Sertifikat Rumah,Ada (Lunas jika meninggal),Rumah tinggal
+Bank Mandiri,Kredit Mobil,80000000,3500000,24 bulan,2026-06-30,BPKB Avanza,Tidak Ada,Mobil keluarga
+Teman (Andi),Pinjaman Usaha,50000000,Belum bayar,Fleksibel,2025-12-31,Tidak Ada,Tidak Ada,Untuk modal toko
+
+TABEL B: PIUTANG (Orang Pinjam ke Kita)
+Nama Peminjam,Jumlah Pinjaman (Rp),Tanggal Pinjam,Janji Bayar,Bukti,Status,Keterangan
+Pak Joko,20000000,2023-05-10,2024-12-31,Chat WhatsApp,Belum Lunas,Pinjaman untuk renovasi rumah
+Adik (Rina),10000000,2023-08-15,Fleksibel,Tidak Ada,Belum Lunas,Pinjaman keluarga

@@ -14,13 +14,9 @@ export function Navbar() {
                     </Link>
 
                     <nav className="flex items-center gap-4">
-                        {/* Simple Nav for Trust */}
-                        <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors hidden md:block">
+                        <Link href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">
                             Harga Paket
                         </Link>
-                        <Button size="sm" variant="outline" className="hidden md:flex">
-                            Login Member
-                        </Button>
                     </nav>
                 </div>
             </Container>
