@@ -66,6 +66,28 @@ npm run dev
 
 Buka [http://localhost:3000](http://localhost:3000).
 
+### 3. Demo Mode (Testing Tanpa Midtrans)
+
+Secara default, checkout sudah dalam **DEMO MODE** sehingga kamu bisa test flow checkout tanpa perlu setup Midtrans dulu.
+
+Untuk mengaktifkan/menonaktifkan Demo Mode:
+1. Buka `components/shared/checkout-modal.tsx`
+2. Ubah baris 11:
+   ```tsx
+   const DEMO_MODE = true  // true = Demo, false = Real Midtrans
+   ```
+
+**Demo Mode:**
+- ✅ Tidak perlu Midtrans credentials
+- ✅ Langsung redirect ke Thank You page
+- ✅ Cocok untuk testing UI/UX
+- ✅ Cocok untuk demo ke klien/investor
+
+**Production Mode (DEMO_MODE = false):**
+- ❌ Perlu Midtrans credentials di `.env.local`
+- ✅ Payment gateway real
+- ✅ Webhook notifications
+
 ### 4. Build Production
 ```bash
 npm run build

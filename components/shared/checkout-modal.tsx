@@ -5,6 +5,11 @@ import { Button } from "@/components/ui/button"
 import { X, Loader2 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 
+// ============================================
+// DEMO MODE: Set to true to skip Midtrans
+// ============================================
+const DEMO_MODE = true // Change to false when Midtrans is ready
+
 interface CheckoutModalProps {
     isOpen: boolean
     onClose: () => void
@@ -22,6 +27,24 @@ export function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
         e.preventDefault()
         setLoading(true)
 
+        // ============================================
+        // DEMO MODE: Skip Midtrans, go directly to Thank You
+        // ============================================
+        if (DEMO_MODE) {
+            console.log("🎭 DEMO MODE: Simulating successful payment...")
+            console.log("Customer Data:", formData)
+
+            // Simulate API delay
+            await new Promise(resolve => setTimeout(resolve, 1500))
+
+            // Redirect to Thank You page
+            window.location.href = "/thank-you"
+            return
+        }
+
+        // ============================================
+        // PRODUCTION MODE: Real Midtrans Integration
+        // ============================================
         try {
             // Call API to get Snap token
             const response = await fetch("/api/midtrans/token", {
