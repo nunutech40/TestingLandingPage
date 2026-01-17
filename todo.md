@@ -31,29 +31,44 @@
     - [x] Guarantee Badge (30 Days Money Back).
 
 ## Phase 3: Integration & Logic
-- [ ] **WhatsApp Integration**
-    - [ ] Create `FloatingWA` component.
-    - [ ] Generate dynamic WA links with pre-filled text.
-- [ ] **Midtrans Integration (Backend)**
-    - [ ] Setup `midtrans-client`.
-    - [ ] Create API Route `/api/midtrans/token` to generate Snap Token.
-    - [ ] Create webhook handler `/api/midtrans/notification` (optional for MVP Phase 1).
-- [ ] **Checkout Logic**
-    - [ ] Connect "Beli Sekarang" button to Midtrans API.
-    - [ ] Handle payment success/pending/error states.
+- [x] **WhatsApp Integration**
+    - [x] Create `FloatingWA` component.
+    - [x] Generate dynamic WA links with pre-filled text.
+- [x] **Midtrans Integration (Backend)**
+    - [x] Setup `midtrans-client`.
+    - [x] Create API Route `/api/midtrans/token` to generate Snap Token.
+    - [x] Create webhook handler `/api/midtrans/notification`.
+- [x] **Checkout Logic**
+    - [x] Connect "Beli Sekarang" button to Midtrans API.
+    - [x] Handle payment success/pending/error states.
 
-## Phase 4: Delivery & Optimization
-- [ ] **Thank You Page**
-    - [ ] Create `/thank-you` page.
-    - [ ] Add Download Button (Direct Google Drive link).
-- [ ] **SEO Setup**
-    - [ ] Update `metadata` in `layout.tsx` (Title, Description, Open Graph).
-    - [ ] Create `sitemap.ts` and `robots.ts`.
+## Phase 4: Product Creation (Digital Assets)
+- [ ] **Excel Template (Master Dashboard Aset)**
+    - [ ] Create Excel file with formulas (Total Net Worth, Asset Categories).
+    - [ ] Add sheets: Properti, Kendaraan, Deposito, Investasi, Dokumen Penting.
+    - [ ] Convert to Google Sheets version.
+- [ ] **PDF Panduan (Printable)**
+    - [ ] Design PDF guide (Canva/Figma).
+    - [ ] Content: Cara mengisi, Tips keamanan dokumen, Template kosong untuk tulis tangan.
+- [ ] **Video Tutorial**
+    - [ ] Record screen tutorial (Bahasa Indonesia).
+    - [ ] Upload to YouTube (Unlisted) or Vimeo.
+- [ ] **Packaging**
+    - [ ] Create ZIP file with all assets.
+    - [ ] Upload to Google Drive (with proper permissions).
+
+## Phase 5: SEO & Analytics
+- [x] **SEO Setup**
+    - [x] Update `metadata` in `layout.tsx` (Title, Description, Open Graph).
+    - [x] Create `sitemap.ts` and `robots.ts`.
+    - [x] Add JSON-LD Schema (Product markup).
 - [ ] **Analytics (Google)**
     - [ ] Add Google Analytics script.
+    - [ ] Setup conversion tracking (Button clicks, WA clicks).
 
-## Phase 5: Deployment
+## Phase 6: Deployment
 - [ ] Push to GitHub.
-- [ ] Deploy to Vercel.
+- [ ] Deploy to IDCloudHost VPS (Nginx + PM2).
 - [ ] Configure Environment Variables (`MIDTRANS_SERVER_KEY`, etc).
 - [ ] Domain Setup (if available).
+

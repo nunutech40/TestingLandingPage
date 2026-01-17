@@ -1,13 +1,16 @@
 "use client"
 
+import { useState } from "react"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import { MessageCircle, ShoppingCart } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { CheckoutModal } from "@/components/shared/checkout-modal"
 
 export function HeroSection() {
-    const whatsappNumber = "6281234567890" // Ganti dengan nomor asli
+    const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
+    const whatsappNumber = "62878310251570"
     const whatsappMessage = encodeURIComponent(
         "Halo Admin JuraganVault, saya tertarik dengan Template Aset & Warisan. Bisa bantu saya?"
     )
@@ -43,9 +46,13 @@ export function HeroSection() {
 
                         {/* CTA Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button size="lg" className="text-lg group">
+                            <Button
+                                size="lg"
+                                className="text-lg group"
+                                onClick={() => setIsCheckoutOpen(true)}
+                            >
                                 <ShoppingCart className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                                Pesan Sekarang - Rp 197.000
+                                Pesan Sekarang - Rp 297.000
                             </Button>
 
                             <Button
@@ -109,6 +116,8 @@ export function HeroSection() {
                     </motion.div>
                 </div>
             </Container>
+
+            <CheckoutModal isOpen={isCheckoutOpen} onClose={() => setIsCheckoutOpen(false)} />
         </section>
     )
 }

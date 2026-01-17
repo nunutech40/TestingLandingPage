@@ -1,12 +1,15 @@
 "use client"
 
+import { useState } from "react"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import { CheckCircle2, ShoppingCart, MessageCircle, Shield, Download, HeadphonesIcon } from "lucide-react"
 import { motion } from "framer-motion"
+import { CheckoutModal } from "@/components/shared/checkout-modal"
 
 export function PricingSection() {
-    const whatsappNumber = "6281234567890"
+    const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
+    const whatsappNumber = "62878310251570"
     const whatsappMessage = encodeURIComponent(
         "Halo Admin, saya mau pesan JuraganVault. Bagaimana cara pembayarannya?"
     )
@@ -75,19 +78,18 @@ export function PricingSection() {
                             <p className="text-blue-100">Sekali bayar, akses selamanya</p>
                         </div>
 
-                        {/* Price */}
                         <div className="text-center py-8 bg-slate-50">
                             <div className="text-slate-500 text-lg mb-2">
                                 <span className="line-through">Rp 497.000</span>
                             </div>
                             <div className="text-5xl md:text-6xl font-bold text-primary mb-2">
-                                Rp 197.000
+                                Rp 297.000
                             </div>
                             <div className="text-slate-600 font-semibold">
-                                Hemat Rp 300.000 (60% OFF)
+                                Hemat Rp 200.000 (40% OFF)
                             </div>
                             <div className="mt-4 text-sm text-red-600 font-semibold">
-                                ⏰ Harga naik kembali dalam 3 hari!
+                                ⏰ Promo terbatas! Harga normal berlaku setelah 100 pembeli pertama
                             </div>
                         </div>
 
@@ -107,9 +109,13 @@ export function PricingSection() {
 
                             {/* CTA Buttons */}
                             <div className="space-y-4">
-                                <Button size="lg" className="w-full text-lg h-14 group">
+                                <Button
+                                    size="lg"
+                                    className="w-full text-lg h-14 group"
+                                    onClick={() => setIsCheckoutOpen(true)}
+                                >
                                     <ShoppingCart className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-                                    Pesan Sekarang - Rp 197.000
+                                    Pesan Sekarang - Rp 297.000
                                 </Button>
 
                                 <Button
@@ -152,6 +158,8 @@ export function PricingSection() {
                     ))}
                 </div>
             </Container>
+
+            <CheckoutModal isOpen={isCheckoutOpen} onClose={() => setIsCheckoutOpen(false)} />
         </section>
     )
 }
