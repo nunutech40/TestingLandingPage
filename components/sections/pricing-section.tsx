@@ -54,9 +54,14 @@ export function PricingSection() {
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
                         Investasi Untuk <span className="text-primary">Ketenangan Keluarga</span>
                     </h2>
-                    <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-                        Harga konsultasi notaris untuk urus warisan bisa jutaan rupiah.
-                        Dengan JuraganVault, Anda cegah masalah sejak awal.
+                    <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-4">
+                        Bayangkan: Istri Anda harus keliling 3 bank, 2 notaris, dan kantor kelurahan
+                        <span className="font-bold text-slate-900"> selama berbulan-bulan</span> hanya untuk mencari
+                        dokumen yang tidak tercatat...
+                    </p>
+                    <p className="text-base md:text-lg text-slate-700 max-w-2xl mx-auto">
+                        Biaya notaris + pengurusan surat warisan bisa <span className="font-bold text-red-600">Rp 5-15 juta</span>.
+                        Belum lagi waktu, tenaga, dan stres yang terbuang.
                     </p>
                 </motion.div>
 
