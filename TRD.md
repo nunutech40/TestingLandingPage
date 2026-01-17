@@ -8,7 +8,10 @@
 *   **Styling:** Tailwind CSS.
     *   Configured with a custom theme for "Premium/Trustworthy" look (Fonts, Colors).
 *   **State Management:** React Context (if needed) or simple Local State (since it's mostly static/form).
-*   **Deployment:** Vercel (Recommended for Next.js) or VPS.
+*   **Deployment:** Self-Hosted VPS (IDCloudHost).
+    *   OS: Ubuntu LTS.
+    *   Process Manager: PM2.
+    *   Web Server: Nginx (Reverse Proxy).
 
 ### 2. Project Structure
 ```
@@ -51,5 +54,14 @@
 *   `react`, `react-dom`
 *   `tailwindcss`
 *   `framer-motion` (for subtle micro-interactions & animations)
-*   `lucide-react` (icons)
-*   `midtrans-client` (official Node.js wrapper)
+### 5. Deployment Strategy (Self-Hosted)
+*   **Provider:** IDCloudHost (VPS).
+*   **CI/CD:** Manual git pull or GitHub Actions (Simple SSH deployment).
+*   **Domain:** TBD (Targeting `.id` or `.com` with "Trustworthy" naming).
+
+### 6. Scalability & Global Expansion Notes
+*   **Global Market Potential:** High (Universal problem).
+*   **Challenges:**
+    *   **Legal:** Excel formulas must be adjusted for specific country laws (US Estate Tax vs Indo Waris Islam/Perdata).
+    *   **Payment:** Switch Midtrans to Stripe/PayPal.
+*   **Strategy:** Win local market first -> Duplicate codebase -> Localize content & legal logic -> Launch Global Brand.
