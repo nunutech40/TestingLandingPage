@@ -18,9 +18,9 @@ export function PricingSection() {
         "Master Dashboard Aset (Excel + Google Sheets)",
         "Buku Panduan Aset (PDF Printable)",
         "Video Tutorial Bahasa Indonesia",
-        "Update Gratis Selamanya",
-        "Akses Member Area",
-        "Support via WhatsApp"
+        "Template Surat Wasiat & Pembagian Harta",
+        "Checklist Dokumen Penting Keluarga",
+        "Support via WhatsApp (Selamanya)"
     ]
 
     const guarantees = [

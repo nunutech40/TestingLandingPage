@@ -62,9 +62,9 @@
     - [x] Update `metadata` in `layout.tsx` (Title, Description, Open Graph).
     - [x] Create `sitemap.ts` and `robots.ts`.
     - [x] Add JSON-LD Schema (Product markup).
-- [ ] **Analytics (Google)**
-    - [ ] Add Google Analytics script.
-    - [ ] Setup conversion tracking (Button clicks, WA clicks).
+- [x] **Analytics (Google)**
+    - [x] Add Google Analytics script.
+    - [x] Setup conversion tracking (Button clicks, WA clicks).
 
 ## Phase 6: Deployment
 - [ ] Push to GitHub.

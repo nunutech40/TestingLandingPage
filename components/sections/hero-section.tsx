@@ -7,6 +7,7 @@ import { MessageCircle, ShoppingCart } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { CheckoutModal } from "@/components/shared/checkout-modal"
+import { trackEvent } from "@/components/shared/google-analytics"
 
 export function HeroSection() {
     const [isCheckoutOpen, setIsCheckoutOpen] = useState(false)
